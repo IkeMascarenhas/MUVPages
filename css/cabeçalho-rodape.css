@@ -77,25 +77,26 @@ body {
     }
 
 
-    .show-items {
-        position: fixed;
-        right: 0 !important;
-        top: 0 !important;
-        transition-duration: 50ms;
-    }
+
 
     #menu-items {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        width: 100vw;
+        width: 65vw;
         height: 100vh;
         background-color: #ea5a14;
         position: fixed;
-        top: -100vh;
+        top: 0;
         right: -100vw;
         transition-duration: 0.5s;
+    }
+
+    .show-items {
+        position: fixed;
+        right: 0 !important;
+        transition-duration: 50ms;
     }
 
     #menu-items img {
@@ -107,6 +108,8 @@ body {
     #menu-items li {
         margin: 1vh 0;
         font-size: 6vw;
+        width: 100%;
+        text-align: center;
     }
 
 
@@ -115,10 +118,11 @@ body {
         color: #fff;
         font-weight: bold;
         text-shadow: 1px 1px 3px #1a1a1a;
+        width: 100%;
     }
 
     #menu-items div{
-        width: 80vw;
+        width: 80%;
         height: 0.1vh;
         background-color: #1a1a1a;
     }

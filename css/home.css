@@ -43,6 +43,7 @@ body{
         border: 2px solid #ea5a14;
         border-radius: 5px 0 0 5px;
         font-size: 4vw;
+        padding: 2vw;
     }
 
     #barraPesquisa input::placeholder{
