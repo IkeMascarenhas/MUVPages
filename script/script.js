@@ -7,13 +7,3 @@ menu.addEventListener("click", ()=>{
 })
 
 
-// Filtro (lista-de-servicos.html)
-
-const btnFiltro = document.querySelector('#filtrar-container')
-const showFiltro = document.querySelector('#filtrar-items')
-
-console.log(showFiltro)
-
-btnFiltro.addEventListener('click', ()=>{
-    showFiltro.classList.toggle('show-filtro')
-})

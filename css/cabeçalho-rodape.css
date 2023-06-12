@@ -29,7 +29,7 @@ body {
 
 
 @media (max-width: 720px) {
-    /* esta 481px pq está bugando em 480px*/
+
 
 
 
@@ -85,12 +85,13 @@ body {
         justify-content: space-around;
         align-items: center;
         width: 65vw;
-        height: 100vh;
+        height: 65vh;
         background-color: #ea5a14;
         position: fixed;
         top: 0;
         right: -100vw;
         transition-duration: 0.5s;
+        border-radius: 0 0 0 10px;
     }
 
     .show-items {
@@ -165,5 +166,98 @@ body {
 
 
 
+
+}
+
+
+@media (min-width: 720px){
+header {
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4vh;
+
+}
+
+#topimg img{
+    width: 40%;
+
+}
+
+header>nav>#menu-container>ul>img{
+    display: none;
+}
+
+header>nav>#menu-container>div{
+    display: none;
+}
+
+#topimg{
+    width: 30vw;
+
+}
+
+#menu-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35vw;
+    font: bold 1vw Roboto, sans-serif;
+}
+
+#menu-items li{
+    font: 500 1.2vw Roboto, sans-serif;
+    color: white;
+}
+
+#menu-items a{
+    color: white;
+    font: 500 1.2vw Roboto, sans-serif;
+}
+
+header>nav>#menu-container>#menu-items>li:last-child{
+    background-color: #ea5a14;
+    padding: 0.5vw;
+    border-radius: 5px;
+ }
+
+ footer {
+    margin-top: 20vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 4vw;
+}
+
+footer>img {
+    width: 15vw;
+
+}
+
+footer a {
+    color: white;
+    font: bold 2vw Roboto, sans-serif;
+
+}
+
+footer h2 {
+    font: bold 3vw Roboto, sans-serif;
+    color: white;
+
+}
+
+#cadastro-rodape a {
+    display: block;
+    margin-top: 1vh;
+}
+
+#redesSociais img {
+    width: 4vw;
+    margin-top: 1vh;
+    margin-right: 2vw;
+}
 
 }

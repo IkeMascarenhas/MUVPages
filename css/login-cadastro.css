@@ -18,7 +18,18 @@
         margin-bottom: 0.5vh;
     }
     
-    
+    h2{
+        font: bold 5vw Roboto, sans-serif;
+    }
+
+    #suporte{
+        margin-bottom: 3vh;
+    }
+
+    #suporte p{
+        margin-top: 1vh;
+        font: 500 3vw Roboto, sans-serif;
+    }
     
     form{
         display: flex;
