@@ -19,6 +19,7 @@
     }
     
     h2{
+        margin-top: 3vh;
         font: bold 5vw Roboto, sans-serif;
     }
 
@@ -87,5 +88,10 @@
 
     form>p>a:hover{
         color: #000000c7;
+    }
+
+    /*Página anunciar.html*/
+    #Telefone{
+        margin-top: 1vh !important;
     }
 } 
