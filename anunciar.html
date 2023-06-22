@@ -8,6 +8,7 @@
     <title>Muvall</title>
     <link rel="stylesheet" href="css/login-cadastro.css">
     <link rel="stylesheet" href="css/cabeçalho-rodape.css">
+    <link rel="stylesheet" href="css/anunciar.css">
 </head>
 <header>
     <a id="topimg" href="index.html" aria-label="logo"><img src="img/LogoMuvall.png" alt="Logo da empresa MUVALL"
@@ -42,9 +43,25 @@
             <input type="text" placeholder="Região: " aria-label="Região" required>
             <input type="text" placeholder="Modelo do veículo: " aria-label="Placa" required>
             <input type="text" placeholder="Placa do veículo: " aria-label="Placa do veículo: " required>
+            <input type="number" name="Capac" id="CapacMax" placeholder="Capacidade Máx: " required>
+            <input type="Number" name="Valor" id="Valor" placeholder="Valor: " required>
             <h2>Contato</h2>
             <input type="tel" placeholder="Telefone: " name="Telefone" id="Telefone" required>
             <input type="email" name="E-mai" id="E-mail" placeholder="Email: " aria-label="Email:" required>
+            <h2>Tipo de Transporte</h2>
+            <div class="Tipos">
+                <input type="radio" name="tipo" id="TipoPessoas">
+                <label for="TipoPessoas">Pessoas</label>
+            </div>
+            <div class="Tipos">
+                <input type="radio" name="tipo" id="TipoCargas">
+                <label for="TipoCargas">Cargas</label>
+            </div>
+            <div id="boxImg">
+                <label for="ImagensAdd" class="addImg"><img src="img/botao-adicionar.png" alt="Botão para adicionar Imagens">Imagem</label>
+                <input type="file" aria-label="Imagem" required name="ImagensAdd" id="ImagensAdd" placeholder="Imagem">
+            </div>
+            <button type="button">Anunciar</button>
         </form>
     </main>
     <footer>
