@@ -28,44 +28,7 @@ body{
         margin: auto;
     }
     
-    #barraPesquisa{
-        width: 100%;
-        margin-top: 3rem;
-        display: flex;
-        justify-content: center;
-        height: 6vh;
-    }
-
-    #barraPesquisa input{
-        width: 75%;
-        margin-right: -1px;
-        border: 2px solid #ea5a14;
-        border-radius: 5px 0 0 5px;
-        font-size: 4vw;
-        padding: 2vw;
-    }
-
-    #barraPesquisa input::placeholder{
-        font-style: italic;
-        text-align: center;
-    }
-
-    #barraPesquisa button{
-        width: 25%;
-        background-color: #1a1a1a;
-        color: #fff;
-        font-weight: bold;
-        font-size: 4vw;
-        border-radius: 0 5px 5px 0;
-        height: 100%;
-        margin-left: -1px;
-        border: 2px solid #1a1a1a;
-        cursor: pointer;
-    }
-
-    #barraPesquisa button:hover{
-        background-color: #1a1a1ae8;
-    }
+    
 
     #cards{
         display: flex;
