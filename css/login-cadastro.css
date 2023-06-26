@@ -29,7 +29,7 @@
 
     #suporte p {
         margin-top: 1vh;
-        font: 500 3vw Roboto, sans-serif;
+        font: 500 4vw Roboto, sans-serif;
     }
 
     form {
@@ -93,7 +93,7 @@
     }
 
     form>p {
-        font: italic bold 3vw roboto, sans-serif;
+        font: italic bold 3.5vw roboto, sans-serif;
         align-self: flex-end;
         margin-top: 1.5vh;
 

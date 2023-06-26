@@ -118,6 +118,10 @@
     display: none;
 }
 
+.hide{
+    display: none !important;
+}
+
 .show-ads{
     display: flex !important;
 }
