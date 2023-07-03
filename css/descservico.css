@@ -1,3 +1,4 @@
+@media(max-width: 720px){
 .imgFull{
     margin-top: 3vh !important;
     margin-bottom: 2vh !important;
@@ -91,4 +92,71 @@ margin-top: 1vh;
 
 .logoEmp h2{
     font: bold 6vw Roboto, sans-serif;
+}
+
+.avalAnuncio a{
+    color: #ea5a14;
+    font: bold 4vw Roboto, sans-serif;
+}
+
+.avaliacao{
+    display: grid; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 2fr 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "user text text"
+        "user star star"; 
+        height: 20vh;
+        border-bottom: 1px solid #1a1a1a;
+    }
+    
+    .avaliacao:first-child{
+        margin-top: 5vh;
+    }
+    
+    .avaliacao img{
+        width: 50%;
+        margin: auto;
+    }
+    
+    .avaliacao>p{
+        font: 500 2.5vw roboto, sans-serif;
+        color: black;
+        width: 100%;
+        margin: auto;
+        grid-area: text;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+    
+    .avaliacao .user{
+        text-align: center;
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2vh;
+        grid-area: user;
+    }
+    
+    .avaliacao>div>p{
+        font: bold 2.5vw roboto, sans-serif;
+    }
+    
+    .stars{
+        display: flex;
+        gap: 1.5vw;
+        margin-bottom: 2vh;
+        width: 30vw;
+        grid-area: star;
+    }
+    
+    .stars img{
+        width: 20%;
+    }
+
+
 }
