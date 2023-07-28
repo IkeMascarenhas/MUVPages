@@ -176,9 +176,9 @@
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    margin: 5vh 0;
-    height: 35vh;
-    padding: 3vw;
+    margin: 5vh 0vw;
+    height: 30vh;
+    padding: 2vw;
 }
 
 #informacoes-anunciante h2{
@@ -192,4 +192,6 @@
     width: 90vw;
     margin-bottom: 2vh;
 }
+
+
 }

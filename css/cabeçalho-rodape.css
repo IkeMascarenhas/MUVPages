@@ -178,6 +178,7 @@ button{
         flex-direction: column;
         gap: 2vh;
         padding: 4vw;
+        width: 100vw;
     }
 
     footer>img {
@@ -208,5 +209,18 @@ button{
         margin-right: 2vw;
     }
 
+    .btn{
+        padding: 4vw;
+        background-color: #ea5a14;
+        font: bold 6vw roboto, sans-serif;
+        color: white;
+        margin: 5vw auto;
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: var(--sombra);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
