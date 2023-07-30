@@ -1,7 +1,3 @@
-.rating-box{
-
-}
-
 .rating-box .stars{
     margin-top: 2vh;
     display: flex;
@@ -25,8 +21,4 @@
 input{
     height: 25vh;
     padding:0vw 0vw 30vw 3vw;
-}
-
-input::placeholder{
-    
 }
