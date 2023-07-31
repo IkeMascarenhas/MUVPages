@@ -182,6 +182,11 @@
     gap: 2vh;
   }
 
+  .informacoes-anuncio h3{
+    color: #f57636;
+      font: bold 3vw roboto, sans-serif;
+    }
+
   #navegacao {
     display: flex;
     justify-content: space-around;
