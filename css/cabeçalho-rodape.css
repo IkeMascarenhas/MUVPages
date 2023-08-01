@@ -135,9 +135,10 @@ button{
     }
 
     .show-items {
-        position: fixed;
+        position: absolute !important;
         right: 0 !important;
         transition-duration: 50ms;
+        display: flex !important;
     }
 
     #menu-items img {
