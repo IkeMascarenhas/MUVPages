@@ -39,16 +39,17 @@
         <h1>Anunciar</h1>
         <hr>
         <form action="" method="post">
-            <input type="text" placeholder="Título: " aria-label="Título" required>
-            <input type="text" placeholder="Descrição: " aria-label="Descrição" required>
-            <input type="text" placeholder="Região: " aria-label="Região" required>
-            <input type="text" placeholder="Modelo do veículo: " aria-label="Placa" required>
-            <input type="text" placeholder="Placa do veículo: " aria-label="Placa do veículo: " required>
-            <input type="number" name="Capac" id="CapacMax" placeholder="Capacidade Máx: " required>
-            <input type="Number" name="Valor" id="Valor" placeholder="Valor: " required>
+            <input type="text" placeholder="Título: " aria-label="Título" required maxlength="50">
+            <input type="text" placeholder="Descrição: " aria-label="Descrição" required maxlength="200">
+            <input type="text" placeholder="Região: " aria-label="Região" required maxlength="2" minlength="2">
+            <input type="text" placeholder="Modelo do veículo: " aria-label="Modelo" required maxlength="30" min="10">
+            <input type="text" placeholder="Placa do veículo: " aria-label="Placa do veículo: " required maxlength="7" minlength="7">
+            <input type="number" name="Capac" id="CapacMax" placeholder="Capacidade Máx: " required maxlength="10" minlength="2">
+            <input type="Number" name="Valor" id="Valor" placeholder="Valor: " required minlength="3" maxlength="
+            5">
             <h2>Contato</h2>
-            <input type="tel" placeholder="Telefone: " name="Telefone" id="Telefone" required>
-            <input type="email" name="E-mai" id="E-mail" placeholder="Email: " aria-label="Email:" required>
+            <input type="tel" placeholder="Telefone: " name="Telefone" id="Telefone" required maxlength="16">
+            <input type="email" name="E-mai" id="E-mail" placeholder="Email: " aria-label="Email:" required maxlength="100">
             <h2>Tipo de Transporte</h2>
             <div class="Tipos">
                 <input type="radio" name="tipo" id="TipoPessoas">
