@@ -1,5 +1,5 @@
 @media (max-width: 720px) {
-  .imgFull {
+  /* .imgFull {
     margin-top: 3vh !important;
     margin-bottom: 2vh !important;
     width: 100vw;
@@ -13,7 +13,7 @@
   .imgFull img {
     width: 100%;
     height: 90%;
-  }
+  } */
 
   .valorServ {
     display: flex;
@@ -119,7 +119,23 @@
     width: 15%;
   }
 
-  .contato{
+  .contratar{
     margin-bottom: 10vh;
+  }
+
+  .contratar a{
+    background-color: #ea5a14;
+    padding: 4vw;
+    color: white;
+    text-align: center;
+    width: 60vw;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  .acessoAvaliacoes{
+    display: flex;
+    width: 100%;
+    gap: 7vw;
   }
 }

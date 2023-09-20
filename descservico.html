@@ -8,7 +8,11 @@
     <title>Ver mais</title>
     <link rel="stylesheet" href="css/cabeçalho-rodape.css">
     <link rel="stylesheet" href="css/descservico.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="script/slider.js" defer></script>
     <script src="script/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body>
@@ -41,9 +45,19 @@
         </div>
     </div>
     <main>
-            <div class="imgFull">
-                <img src="img/caminhao-desc.jpg" alt="Van">
+        <section class="container imgFull">
+            <button class="arrow-left control" aria-label="Previous Image"><img src="img/arrow-left.svg" alt="Seta Voltar"></button>
+            <button class="arrow-right control" aria-label="Seta avançar"><img src="img/arrow-left.svg" alt=""></button>
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <img src="https://source.unsplash.com/random/480x240/?truck" alt="Beach Images" class="item current-item">
+                    <img src="https://source.unsplash.com/random/480x240/?truck" alt="Animal Images" class="item">
+                    <img src="https://source.unsplash.com/random/480x240/?truck" alt="Animal Images" class="item">
+                    <img src="https://source.unsplash.com/random/480x240/?truck" alt="Animal Images" class="item">
+                    <img src="https://source.unsplash.com/random/480x240/?truck" alt="Animal Images" class="item">
+                </div>
             </div>
+        </section>
         <div class="larguraPadrao">
             <section class="valorServ">
                 <h1>Título Serviço</h1>
@@ -87,14 +101,10 @@
                       <div class="stars">
                         <p>(0) Péssimo</p><div><img src="img/star0.png" alt="Estrela de avaliação" /><img src="img/star0.png" alt="Estrela de avaliação" /><img src="img/star0.png" alt="Estrela de avaliação" /><img src="img/star0.png" alt="Estrela de avaliação" /><img src="img/star0.png" alt="Estrela de avaliação" /></div>
                       </div>
-                      <a href="#">Ver avaliações ></a>
+                      <div class="acessoAvaliacoes"><a href="#">Ver avaliações ></a> <a href="avaliar.html">Avaliar ></a></div>
                   </div>
-            <section class="infoPadrao contato">
-                <h2>Contato:</h2>
-                <h3>Telefone:</h3>
-                <p>(--)---------</p>
-                <h3>Email:</h3>
-                <p>Empresa@gmail.com</p>
+            <section class="infoPadrao contratar">
+                <a href="#">Solicitar Contratação</a>
             </section>
         </div>
     </main>
