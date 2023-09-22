@@ -195,7 +195,7 @@ button{
     footer h2 {
         font: bold 4.5vw Roboto, sans-serif;
         color: white;
-
+        margin-top: 0vh !important;
     }
 
     #cadastro-rodape a {
