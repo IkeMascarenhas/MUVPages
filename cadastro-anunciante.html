@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="css/cabeçalho-rodape.css">
     <link rel="stylesheet" href="css/login-cadastro.css">
     <link rel="stylesheet" href="css/cadastro-anunciante.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="script/script.js" defer></script>    
     <script src="script/image-preview.js" defer></script>
+    
 </head>
 <body>
 <header>
@@ -39,8 +42,8 @@
         <h1>Cadastro</h1><hr>
         <form action="cadastro" method="post">
            <input type="email" aria-label="E-mail" placeholder="Email:" required>
-           <input type="password" aria-label="Senha" placeholder="Senha" minlength="8" required>
-           <input type="number" aria-label="CNPJ" placeholder="CNPJ" required>
+           <input type="password" aria-label="Senha" placeholder="Senha" minlength="8" required id="password">
+           <input type="text" aria-label="CNPJ" placeholder="CNPJ" required id="CNPJ">
            <input type="text" aria-label="Nome da Empresa" placeholder="Nome da Empresa:" required>
            <div id="boxLogo">
                <label for="Logo" class="addLogo"><img src="img/botao-adicionar.png" alt="Botão para adicionar Logo">Logo</label>
@@ -66,6 +69,13 @@
             <a href="https://instagram.com"><img src="img/linkedin.png" alt="Logo Facebook" target="_blank" rel="external"></a>
         </div>
     </footer>
+    <script>
+        $("#CNPJ").mask("99.999.999/9999-99");
+        $("#Telefone").mask("(99) 99999-99999")
+        $("#CEP").mask("99999-999")
+        $("#CPF").mask("999.999.999-99")
+        $("#data").mask("99/99/9999")
+    </script>
 
 </body>
 </html>

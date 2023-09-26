@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/login-cadastro.css">
     <script src="script/script.js" defer></script>
     <script src="script/validacao.js" defer></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 </head>
 <body>
     <header>
@@ -39,7 +41,7 @@
             <input type="email" name="email" placeholder="E-Mail:" id="email" required maxlength="100">
             <input type="text" name="nome" placeholder="Nome:" id="nome" required maxlength="100" minlength="3">
             <input type="password" name="senha" placeholder="Senha:" id="senha" required maxlength="30" minlength="8">
-            <input type="date" name="data" placeholder="Data de Nascimento:" id="data" required >
+            <input type="text" name="data" placeholder="Data de Nascimento:" id="data" required >
             <button type="submit" id="cadastrar-bttn">Cadastrar</button>
         </form>
     </main>
@@ -59,7 +61,14 @@
             <a href="https://instagram.com"><img src="img/linkedin.png" alt="Logo Facebook" target="_blank" rel="external"></a>
         </div>
     </footer>
-    <script src="script/cadastro.js"></script>
+    <script>
+        $("#CNPJ").mask("99.999.999/9999-99");
+        $("#Telefone").mask("(99) 99999-99999")
+        $("#CEP").mask("99999-999")
+        $("#CPF").mask("999.999.999-99")
+        $("#data").mask("99/99/9999")
+        $("#card").mask("9999 9999 9999 9999")
+    </script>
 </body>
  <!-- <script>
     function formatCPF(cpf) {

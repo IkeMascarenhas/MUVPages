@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/login-cadastro.css">
     <link rel="stylesheet" href="css/cabeçalho-rodape.css">
     <script src="script/script.js" defer></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 </head>
 <body>
 <header>
@@ -37,9 +39,9 @@
         <h2>Pagamento</h2><hr>
         <form action="" method="post">
            <input type="text" aria-label="Titular do Cartão" required maxlength="100" minlength="3" placeholder="Titular do cartão: ">
-           <input type="number" aria-label="Número do Cartão" maxlength="16" minlength="13" required placeholder="Número do cartão: ">
-           <input type="number" aria-label="CVV" required maxlength="3" placeholder="CVV: ">
-           <input type="date" aria-label="Expira em:" required placeholder="Expira em:">
+           <input type="text" aria-label="Número do Cartão" maxlength="16" minlength="13" required placeholder="Número do cartão: " id="card">
+           <input type="text" aria-label="CVV" required minlength="3" placeholder="CVV: " id="cvv">
+           <input type="text" aria-label="Expira em:" required placeholder="Expira em:" id="data">
 
            <button type="button">Continuar</button>
         </form>
@@ -60,6 +62,15 @@
             <a href="https://instagram.com"><img src="img/linkedin.png" alt="Logo Facebook" target="_blank" rel="external"></a>
         </div>
     </footer>
+    <script>
+        $("#CNPJ").mask("99.999.999/9999-99");
+        $("#Telefone").mask("(99) 99999-99999")
+        $("#CEP").mask("99999-999")
+        $("#CPF").mask("999.999.999-99")
+        $("#data").mask("99/99/9999")
+        $("#card").mask("9999 9999 9999 9999")
+        $("#cvv").mask("999")
+    </script>
     <!-- <script src="script/cadastro.js"></script> -->
 </body>
 </body>

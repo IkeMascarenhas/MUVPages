@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/cabeçalho-rodape.css">
     <link rel="stylesheet" href="css/login-cadastro.css">
     <script src="script/script.js" defer></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 </head>
 <body>
     <header>
@@ -61,5 +63,13 @@
             <a href="https://instagram.com"><img src="img/linkedin.png" alt="Logo Facebook" target="_blank" rel="external"></a>
         </div>
     </footer>
+    <script>
+        $("#CNPJ").mask("99.999.999/9999-99");
+        $("#Telefone").mask("(99) 99999-99999")
+        $("#CEP").mask("99999-999")
+        $("#CPF").mask("999.999.999-99")
+        $("#data").mask("99/99/9999")
+        $("#card").mask("9999 9999 9999 9999")
+    </script>
 </body>
 </html>
