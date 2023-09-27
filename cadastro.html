@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/login-cadastro.css">
     <script src="script/script.js" defer></script>
     <script src="script/validacao.js" defer></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 </head>
 <body>
     <header>
@@ -37,7 +37,7 @@
     </header>
     <main>
         <h1>Cadastro</h1><hr>
-        <form action="cadastro" method="post"  onsubmit="validarFormulario()">
+        <form action="cadastro" method="post">
             <input type="email" name="email" placeholder="E-Mail:" id="email" required maxlength="100">
             <input type="text" name="nome" placeholder="Nome:" id="nome" required maxlength="100" minlength="3">
             <input type="password" name="senha" placeholder="Senha:" id="senha" required maxlength="30" minlength="8">

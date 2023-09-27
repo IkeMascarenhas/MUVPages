@@ -8,11 +8,11 @@
     <title>Anunciat</title>
     <link rel="stylesheet" href="css/login-cadastro.css">
     <link rel="stylesheet" href="css/cabeçalho-rodape.css">
-    <link rel="stylesheet" href="css/anunciar.css">
+    <link rel="css" href="css/anunciar.css">
     <script src="script/script.js" defer></script>
-    <script src="script/image-preview.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="script/validacao.js" defer></script>
 </head>
 <header>
     <a id="topimg" href="index.html" aria-label="logo"><img src="img/LogoMuvall.png" alt="Logo da empresa MUVALL"
@@ -46,13 +46,10 @@
             <input type="text" placeholder="Descrição: " aria-label="Descrição" required maxlength="200">
             <input type="text" placeholder="Região: " aria-label="Região" required maxlength="2" minlength="2">
             <input type="text" placeholder="Modelo do veículo: " aria-label="Modelo" required maxlength="30" min="10">
-            <input type="text" placeholder="Placa do veículo: " aria-label="Placa do veículo: " required maxlength="7" minlength="7">
+            <input type="text" placeholder="Placa do veículo: " aria-label="Placa do veículo: " required maxlength="7" minlength="7 " id="placa">
             <input type="number" name="Capac" id="CapacMax" placeholder="Capacidade Máx: " required maxlength="10" minlength="2">
             <input type="Number" name="Valor" id="Valor" placeholder="Valor: " required minlength="3" maxlength="
             5">
-            <h2>Contato</h2>
-            <input type="tel" placeholder="Telefone: " name="Telefone" id="Telefone" required maxlength="16">
-            <input type="email" name="E-mai" id="E-mail" placeholder="Email: " aria-label="Email:" required maxlength="100">
             <h2>Tipo de Transporte</h2>
             <div class="Tipos">
                 <input type="radio" name="tipo" id="TipoPessoas">
@@ -70,7 +67,7 @@
                 <label for="ImagensAdd" class="addImg"><img src="img/botao-adicionar.png" alt="Botão para adicionar Imagens">Imagem</label>
                 <input type="file" aria-label="Imagem" required name="ImagensAdd" id="ImagensAdd" placeholder="Imagem">
             </div>
-            <button type="button">Anunciar</button>
+            <button type="button" id="cadastrar-bttn">Anunciar</button>
         </form>
     </main>
     <footer>
@@ -98,6 +95,7 @@
         $("#CPF").mask("999.999.999-99")
         $("#data").mask("99/99/9999")
         $("#card").mask("9999 9999 9999 9999")
+        $("#placa").mask('AAA-9999')
     </script>
 </body>
 </html>
