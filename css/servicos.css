@@ -148,9 +148,9 @@
     justify-content: space-between;
     height: 25vh;
     margin: 2vw 0 2vw 0;
-    background-color: #1a1a1aec;
+    background-color: #1a1a1a;
     border-radius: 10px;
-    padding: 0 8vw 0 8vw;
+    padding: 0 8vw 0 4vw;
   }
 
   .anuncios:first-child {
@@ -163,6 +163,8 @@
     border-radius: 10px;
     align-self: center;
     min-width: 50%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
   }
 
   .anuncios h2 {
