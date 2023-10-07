@@ -4,7 +4,6 @@
     align-items: center;
     gap: 25px;
     margin-bottom: 2vh;
-
 }
 
 .stars i{
@@ -22,3 +21,5 @@ input{
     height: 15vh;
     padding: 3vw 3vw 10vh 3vw;
 }
+
+

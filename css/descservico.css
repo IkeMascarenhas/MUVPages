@@ -81,42 +81,44 @@
   .avaliacao {
     display: flex;
     flex-direction: column;
+    gap: 3vh;
+    margin-top: 2vh;
   }
 
   #avaliacoes h2{
     font: bold 5.5vw Roboto, sans-serif;
     color: #1a1a1a;
+    margin-bottom: 5vh;
   }
 
   .avaliacao a{
     color: #ea5a14;
     font: bold 5vw Roboto, sans-serif;
   }
-  .stars p {
-    font: bold 4vw Roboto, sans-serif;
-    color: #1a1a1a;
-    width: 25vw;
-  }
 
-  .stars {
+  .avaliacao div{
     display: flex;
+    /* justify-content: space-between; */
     align-items: center;
-    gap: 1.5vw;
-    margin-bottom: 2vh;
-    width: 90vw;
   }
 
-  .stars div{
+  .avaliacao .stars{
     display: flex;
-    gap: 1vw;
+    gap: 1vw ;
+    width: 70%;
   }
 
-  .stars:first-child{
-    margin-top: 2vh;
+  .stars i{
+    color: #ff9c1a;
+    font-size: 5vw;
+  }
+  .avaliacao div p{
+    width: 40%;
+    font-size: 4.5vw;
   }
 
-  .stars img {
-    width: 15%;
+  .stars .no-star{
+    color: #ccc;
   }
 
   .contratar{
@@ -137,5 +139,35 @@
     display: flex;
     width: 100%;
     gap: 7vw;
+  }
+
+  .txt-ava{
+    margin-top: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .txt-ava>div{
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
+    border-radius: 20px;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+
+  .txt-ava h3{
+    font:bold 4.5vw "Roboto",sans-serif;
+  }
+
+  .txt-ava p{
+    font: normal 3.5vw "Roboto",sans-serif;
+  }
+
+  .txt-ava>div>div>i{
+    font-size: 3.5vw;
   }
 }
