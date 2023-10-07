@@ -3,13 +3,93 @@ const btn_cadastro = document.querySelector('#cadastrar-bttn')
 if(document.querySelector('#data')){
     const age = document.querySelector('#data')
 }else{
-    const age = false
+    var age = false
 }
-let nowadays = new Date()
-console.log(nowadays.getSeconds())
-
+let nome="nome"
+const allInputs = [...document.querySelectorAll("form>*")]
 //*---------------------------------
 
+if(document.querySelector('input[type=password]')){
+  var inputSenha = document.querySelector('input[type=password]')}
+
+let retornoUser=[...document.querySelectorAll("form>aside>ul>li")]
+console.log(retornoUser)
+
+function validarSenha(senha) {
+  let retornoUser=[...document.querySelectorAll("form>aside>ul>li")]
+  // Verifica se a senha tem pelo menos 8 caracteres
+  if (senha.length < 8) {
+    return false;
+  }
+
+  // Verifica se a senha contém pelo menos um número
+  if (!/[0-9]/.test(senha)) {
+    return false;
+  }
+
+  // Verifica se a senha contém pelo menos uma letra maiúscula
+  if (!/[A-Z]/.test(senha)) {
+    return false;
+  }
+
+  // Verifica se a senha contém pelo menos uma letra minúscula
+  if (!/[a-z]/.test(senha)) {
+    return false;
+  }
+
+  // Verifica se a senha contém pelo menos um símbolo (caractere especial)
+  if (!/[$&+,:;=?@#|'<>.^*()%!-]/.test(senha)) {
+    return false;
+  }
+
+  // Se todas as condições foram atendidas, a senha é válida
+  return true;
+}
+let senhaValue=inputSenha.value
+
+inputSenha.addEventListener("input",(senha)=>{
+  console.log(senha.target.value)
+  let valor = senha.target.value
+  let retornoUser=[...document.querySelectorAll("form>aside>ul>li")]
+  // Verifica se a senha tem pelo menos 8 caracteres
+  if (valor.length > 8) {
+    retornoUser[0].classList.add("ok")
+  }else{
+    retornoUser[0].classList.remove("ok")
+  }
+
+  //Verifica se a senha contém pelo menos uma letra maiúscula
+  if (!/[A-Z]/.test(valor)) {
+    retornoUser[1].classList.remove("ok")
+  }else{
+    retornoUser[1].classList.add("ok")
+  }
+
+ // Verifica se a senha contém pelo menos uma letra minúscula
+  if (/[a-z]/.test(valor)) {
+    retornoUser[2].classList.add("ok")
+  }else{
+    retornoUser[2].classList.remove("ok")
+  }
+
+  // Verifica se a senha contém pelo menos um número
+  if (/[0-9]/.test(valor)) {
+    retornoUser[3].classList.add("ok")
+  }else{
+    retornoUser[3].classList.remove("ok")
+  }
+
+
+
+ 
+
+  // Verifica se a senha contém pelo menos um símbolo (caractere especial)
+  if (/[$&+,:;=?@#|'<>.^*()%!-]/.test(valor)) {
+    retornoUser[4].classList.add("ok")
+  }else{
+    retornoUser[4].classList.remove("ok")
+  }
+})
 
 // Função para validar o formulário
 btn_cadastro.addEventListener('click',(event)=>{
@@ -20,19 +100,30 @@ btn_cadastro.addEventListener('click',(event)=>{
      if(document.getElementById('nome')){
      var nome = document.getElementById('nome').value;
      }
+
      let email = document.querySelector('input[type=email]').value;
+
      if(document.querySelector('input[type=password')){
-     var senha = document.querySelector('input[type=password').value;
+     var senha = inputSenha.value;
      }
 
- 
    
      // Realizar validação dos campos
-     if (nome === '' || email === '' || senha === '') {
-       alert('Por favor, preencha todos os campos.');
-       return false; // Impede o envio do formulário
-     }
-   
+     allInputs.every((el,i)=>{
+      if (el.value === '') {
+        alert('Por favor, preencha todos os campos.');
+        return false; // Impede o envio do formulário
+      }
+     })
+     
+     //!Validar a senha
+     
+    
+    if (validarSenha(senha) == false) {
+      alert("Senha inválida.");
+    }
+
+
      // Validar o formato do email usando uma expressão regular simples
      var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
      if (!emailRegex.test(email)) {
@@ -51,6 +142,7 @@ btn_cadastro.addEventListener('click',(event)=>{
            return false
        }
      }
+    
      
  //! ----------------------------------------------------------------------
  

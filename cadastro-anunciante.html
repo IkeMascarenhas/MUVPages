@@ -43,8 +43,17 @@
         <h1>Cadastro</h1><hr>
         <form action="cadastro" method="post">
            <input type="email" aria-label="E-mail" placeholder="Email:" required>
-           <input type="password" aria-label="Senha" placeholder="Senha" minlength="8" required id="password">
-           <input type="text" aria-label="CNPJ" placeholder="CNPJ" required id="CNPJ">
+           <input type="password" aria-label="Senha" placeholder="Senha:" minlength="8" required id="password">
+            <aside>
+                <ul>
+                    <li> Mais de 8 caracteres</li>
+                    <li>Letras maiúsculas</li>
+                    <li>Letras minúscuilas</li>
+                <li>Números</li>
+                <li>Símbolos</li>
+                </ul>
+            </aside>
+           <input type="text" aria-label="CNPJ" placeholder="CNPJ:" required id="CNPJ">
            <input type="text" aria-label="Nome da Empresa" placeholder="Nome da Empresa:" required>
            <div id="boxLogo">
                <label for="Logo" class="addLogo"><img src="img/botao-adicionar.png" alt="Botão para adicionar Logo">Logo</label>

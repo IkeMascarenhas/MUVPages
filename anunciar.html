@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anunciat</title>
+    <title>Anunciar</title>
     <link rel="stylesheet" href="css/login-cadastro.css">
     <link rel="stylesheet" href="css/cabeçalho-rodape.css">
     <link rel="css" href="css/anunciar.css">
@@ -44,12 +44,37 @@
         <form action="" method="post">
             <input type="text" placeholder="Título: " aria-label="Título" required maxlength="50">
             <input type="text" placeholder="Descrição: " aria-label="Descrição" required maxlength="200">
-            <input type="text" placeholder="Região: " aria-label="Região" required maxlength="2" minlength="2">
+            <input type="text" placeholder="Região: " aria-label="Região" required maxlength="2" minlength="2" list="regiao">
+            <datalist id="regiao">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+                <option value="DF">DF</option>
+            </datalist>
             <input type="text" placeholder="Modelo do veículo: " aria-label="Modelo" required maxlength="30" min="10">
             <input type="text" placeholder="Placa do veículo: " aria-label="Placa do veículo: " required maxlength="7" minlength="7 " id="placa">
             <input type="number" name="Capac" id="CapacMax" placeholder="Capacidade Máx: " required maxlength="10" minlength="2">
-            <input type="Number" name="Valor" id="Valor" placeholder="Valor: " required minlength="3" maxlength="
-            5">
             <h2>Tipo de Transporte</h2>
             <div class="Tipos">
                 <input type="radio" name="tipo" id="TipoPessoas">
@@ -59,7 +84,7 @@
                 <input type="radio" name="tipo" id="TipoCargas">
                 <label for="TipoCargas">Cargas</label>
             </div>
-            <h2>Contato</h2>
+            <h2 style="margin-bottom: 2vh;">Contato</h2>
             <input type="text" name="Telefone" id="Telefone" required minlength="5"
             maxlength="15" placeholder="Telefone:">
             <input type="email" name="ContEmail" id="ContEmail" required minlength="12" maxlength="100" placeholder="Email:">
