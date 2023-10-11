@@ -1,0 +1,29 @@
+.txt-ava{
+    margin-top: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .txt-ava>div{
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
+    border-radius: 20px;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+
+  .txt-ava h3{
+    font:bold 4.5vw "Roboto",sans-serif;
+  }
+
+  .txt-ava p{
+    font: normal 3.5vw "Roboto",sans-serif;
+  }
+
+  .txt-ava>div>div>i{
+    font-size: 3.5vw;
+  }
