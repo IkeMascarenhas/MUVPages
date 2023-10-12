@@ -1,100 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ver mais</title>
-    <link rel="stylesheet" href="css/cabeçalho-rodape.css">
-    <link rel="stylesheet" href="css/descservico.css">
-    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/cabeçalho-rodape.css" />
+    <link rel="stylesheet" href="css/descservico.css" />
     <script src="script/slider.js" defer></script>
-    <script src="script/script.js" defer></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-</head>
+    <script src="script/avaliacao.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+        li{
+            cursor: pointer;
+        }
+        li:hover{
+            border-color: #ea5a14;
+        }
+    </style>
+  </head>
 
-<body>
+  <body>
     <header>
-        <a id="topimg" href="index.html" aria-label="logo"><img src="img/LogoMuvall.png" alt="Logo da empresa MUVALL"
-                rel="prev"></a>
+      <a id="topimg" href="index.html" aria-label="logo"
+        ><img src="img/LogoMuvall.png" alt="Logo da empresa MUVALL" rel="prev"
+      /></a>
 
-        <nav>
-            <div id="menu-container">
+      <nav>
+        <div id="menu-container">
+          <div></div>
+          <div></div>
+          <div></div>
 
-                <div></div>
-                <div></div>
-                <div></div>
-
-
-                <ul id="menu-items" class="NaoPropagar">
-                    <img src="img/delete.png" alt="Fechar" id="close">
-                    <li class="NaoPropagar"><a href="perfil.html" aria-label="Perfil" rel="next">Minha conta</a></li>
-                    <li class="NaoPropagar"><a href="anunciar.html">Anuncie</a></li>
-                    <li class="NaoPropagar"><a href="faleConosco.html" aria-label="Fale conosco" rel="next">Fale
-                            Conosco</a></li>
-                    <li class="NaoPropagar"><a href="login.html">Entre</a></li>
-                    <li class="NaoPropagar"><a href="cadastro.html">Cadastre-se</a></li>
-                </ul>
-            </div>
-        </nav>
+          <ul id="menu-items" class="NaoPropagar">
+            <img src="img/delete.png" alt="Fechar" id="close" />
+            <li class="NaoPropagar">
+              <a href="perfil.html" aria-label="Perfil" rel="next"
+                >Minha conta</a
+              >
+            </li>
+            <li class="NaoPropagar"><a href="anunciar.html">Anuncie</a></li>
+            <li class="NaoPropagar">
+              <a href="faleConosco.html" aria-label="Fale conosco" rel="next"
+                >Fale Conosco</a
+              >
+            </li>
+            <li class="NaoPropagar"><a href="login.html">Entre</a></li>
+            <li class="NaoPropagar"><a href="cadastro.html">Cadastre-se</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <main class="txt-ava">
-        <div>
-            <h3>usuário</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsa laboriosam, praesentium a
-                excepturi, voluptatum porro sequi deleniti</p>
+    <div class="filtroAva">
+        <ul>
+          <li>
             <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star no-star"></i>
-                <i class="fa-solid fa-star no-star"></i>
-                <i class="fa-solid fa-star no-star"></i>
-                <i class="fa-solid fa-star no-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
-        </div>
-        <div>
-            <h3>usuário</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsa laboriosam, praesentium a
-                excepturi, voluptatum porro sequi deleniti</p>
+          </li>
+          <li>
             <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star no-star"></i>
-                <i class="fa-solid fa-star no-star"></i>
-                <i class="fa-solid fa-star no-star"></i>
-                <i class="fa-solid fa-star no-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star no-star"></i>
             </div>
-        </div>
-        <div>
-            <h3>usuário</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsa laboriosam, praesentium a
-                excepturi, voluptatum porro sequi deleniti</p>
+          </li>
+          <li>
             <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star no-star"></i>
-                <i class="fa-solid fa-star no-star"></i>
-                <i class="fa-solid fa-star no-star"></i>
-                <i class="fa-solid fa-star no-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star no-star"></i>
+              <i class="fa-solid fa-star no-star"></i>
             </div>
+          </li>
+          <li>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star no-star"></i>
+              <i class="fa-solid fa-star no-star"></i>
+              <i class="fa-solid fa-star no-star"></i>
+            </div>
+          </li>
+          <li>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star no-star"></i>
+              <i class="fa-solid fa-star no-star"></i>
+              <i class="fa-solid fa-star no-star"></i>
+              <i class="fa-solid fa-star no-star"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    <main class="txt-ava pageAva">
+      <div class="rate">
+        <h3>Usuário</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          ipsa laboriosam, praesentium a excepturi, voluptatum porro sequi
+          deleniti
+        </p>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star no-star"></i>
+          <i class="fa-solid fa-star no-star"></i>
         </div>
+      </div>
+      <div class="rate">
+        <h3>Usuário</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          ipsa laboriosam, praesentium a excepturi, voluptatum porro sequi
+          deleniti
+        </p>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star no-star"></i>
+          <i class="fa-solid fa-star no-star"></i>
+          <i class="fa-solid fa-star no-star"></i>
+        </div>
+      </div>
+      <div class="rate">
+        <h3>Usuário</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          ipsa laboriosam, praesentium a excepturi, voluptatum porro sequi
+          deleniti
+        </p>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star no-star"></i>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <img src="img/LogoMuvall.png" alt="Logo MUVall">
-        <a href="faleConosco.html">Fale conosco</a>
-        <div id="cadastro-rodape">
-            <h2>Cadastro</h2>
-            <ul>
-                <li><a href="cadastro.html" rel="next">Usuário</a></li>
-                <li><a href="cadastro-anunciante.html" rel="next">Anunciante</a></li>
-            </ul>
-        </div>
-        <div id="redesSociais">
-            <h2>Redes sociais</h2>
-            <a href="https://instagram.com"><img src="img/instagram.png" alt="Logo Instagram" target="_blank"
-                    rel="external"></a>
-            <a href="https://instagram.com"><img src="img/linkedin.png" alt="Logo Facebook" target="_blank"
-                    rel="external"></a>
-        </div>
+      <img src="img/LogoMuvall.png" alt="Logo MUVall" />
+      <a href="faleConosco.html">Fale conosco</a>
+      <div id="cadastro-rodape">
+        <h2>Cadastro</h2>
+        <ul>
+          <li><a href="cadastro.html" rel="next">Usuário</a></li>
+          <li><a href="cadastro-anunciante.html" rel="next">Anunciante</a></li>
+        </ul>
+      </div>
+      <div id="redesSociais">
+        <h2>Redes sociais</h2>
+        <a href="https://instagram.com"
+          ><img
+            src="img/instagram.png"
+            alt="Logo Instagram"
+            target="_blank"
+            rel="external"
+        /></a>
+        <a href="https://instagram.com"
+          ><img
+            src="img/linkedin.png"
+            alt="Logo Facebook"
+            target="_blank"
+            rel="external"
+        /></a>
+      </div>
     </footer>
-</body>
+  </body>
+</html>

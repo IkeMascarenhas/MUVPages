@@ -90,6 +90,7 @@
         border-radius: 10px;
         box-shadow: var(--sombra);
         margin-top: 6vh;
+        margin-bottom: 5vh;
     }
 
     form>p {
