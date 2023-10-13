@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contratar</title>
+    <link rel="stylesheet" href="css/pendentes.css">
+    <title>Pendentes</title>
     <link rel="stylesheet" href="css/cabeçalho-rodape.css">
-    <link rel="stylesheet" href="css/login-cadastro.css">
     <script src="script/script.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 </head>
+
 <body>
     <header>
         <a id="topimg" href="index.html" aria-label="logo"><img src="img/LogoMuvall.png"alt="Logo da empresa MUVALL" rel="prev"></a>
@@ -30,24 +30,35 @@
                     <li class="NaoPropagar"><a href="faleConosco.html" aria-label="Fale conosco" rel="next">Fale Conosco</a></li>
                     <li class="NaoPropagar"><a href="login.html">Entre</a></li>
                     <li class="NaoPropagar"><a href="cadastro.html">Cadastre-se</a></li>
+                    <li class="NaoPropagar"><a href="lista-de-servicos.html">Serviços</a></li>
+                    <li class="NaoPropagar"><a href="descservico.html">Detalhes Serviço</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <h1>Contratar serviço</h1>
-        <hr>
-        <form>
-            <input type="text" placeholder="Data em que o serviço deve ser realizado:" required aria-label="Data em que o serviço deve ser realizado:" id="data">
-            <input type="number" placeholder="Quantidade de carga:" required aria-label="Quantidade de carga:">
-            <input type="text" placeholder="Localização inicial(CEP):" required aria-label="Localização inicial(CEP):" class="CEP">
-            <input type="text" placeholder="Endereço Inicial:" required aria-label="Localização inicial:">
-            <input type="text" placeholder="Localização final(CEP):" required aria-label="Localização final(CEP):" class="CEP">
-            <input type="text" placeholder="Endereço Final:" required aria-label="Localização final:">
-            <textarea type="text" placeholder="Informações adicionais:" required aria-label="Informações adicionais:" cols="30" rows="6"></textarea>
-            <button>Enviar Solicitação</button>
-        </form>
-    </main>
+        <section class="pendentes">
+          <a href="contratacaoPendente.html">
+            <h2>Oferta 1</h2>
+            <p>Data: 17/11/2023</p>
+            <p>Início: Jardim Silveira, Barueri-SP</p>
+            <p>Término: Jardim Belval, Barueri-SP</p>
+          </a>
+          <a href="#">
+            <h2>Oferta 2</h2>
+            <p>Data: 10/12/2023</p>
+            <p>Início: Jardim Silveira, Barueri-SP</p>
+            <p>Término: Jardim Belval, Barueri-SP</p>
+          </a>
+          <a href="#" >
+            <h2>Oferta 3</h2>
+            <p>Data: 13/11/2023</p>
+            <p>Início: Jardim Silveira, Barueri-SP</p>
+            <p>Término: Jardim Belval, Barueri-SP</p>
+          </a>
+          
+        </section>
+      </main>
     <footer>
         <img src="img/LogoMuvall.png" alt="Logo MUVall">
         <a href="faleConosco.html">Fale conosco</a>
@@ -64,13 +75,6 @@
             <a href="https://instagram.com"><img src="img/linkedin.png" alt="Logo Facebook" target="_blank" rel="external"></a>
         </div>
     </footer>
-    <script>
-        $("#CNPJ").mask("99.999.999/9999-99");
-        $("#Telefone").mask("(99) 99999-99999")
-        $(".CEP").mask("99999-999")
-        $("#CPF").mask("999.999.999-99")
-        $("#data").mask("99/99/9999")
-        $("#card").mask("9999 9999 9999 9999")
-    </script>
 </body>
+
 </html>

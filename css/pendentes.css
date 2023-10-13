@@ -1,0 +1,32 @@
+.pendentes{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3vw;
+    margin: 0vh auto 20vh auto;
+    
+}
+
+.pendentes a{
+    margin-top: 5vh;
+    width: 100%;
+    padding: 3vh 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    border: 2px solid #1a1a1a;
+    box-shadow: var(--sombra);
+    border-radius: 10px;
+}
+
+.pendentes a h2{
+    font: bold 5vw "Roboto",sans-serif;
+    color: #ea5a14;
+
+}
+
+.pendentes a p{
+    font: 500 3.5vw "Roboto",sans-serif;
+    color: #1a1a1a;
+}
