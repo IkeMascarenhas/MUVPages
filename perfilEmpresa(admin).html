@@ -45,6 +45,7 @@
       </nav>
     </header>
 
+    <form action="cadastro" method="post" id="editar">
     <section class="empresa">
       <div id="logo-nome">
         <label for="img-perfil" id="user"><img src="img/perfil_cliente.png" alt="Logo da Empresa"/></label>
@@ -59,8 +60,17 @@
       </div>
       </div>
     </section>
-      <main>
-        <section class="administrar">
+    <div class="inputs-edit">
+      <input type="email" aria-label="E-mail" placeholder="Email:" required>
+      <input type="password" aria-label="Senha" placeholder="Senha:" minlength="8" required id="password">
+      <input type="text" aria-label="CNPJ" placeholder="CNPJ:" required id="CNPJ">
+      <input type="text" aria-label="Nome da Empresa" placeholder="Nome da Empresa:" required>
+    </div>
+
+        <button type="button" id="cadastrar-bttn">Confirmar</button>
+     </form>
+     <main>
+     <section class="administrar">
           <a href="">
             <img src="img/wall-clock.png" alt="pendentes">
             <p>Contratações pendentes</p>
@@ -80,14 +90,6 @@
         </section>
           <button class="btn">Excluir conta</button>
       </main>
-      <form action="cadastro" method="post" style="width: 80vw; margin:auto;" id="editar">
-        <input type="email" aria-label="E-mail" placeholder="Email:" required>
-        <input type="password" aria-label="Senha" placeholder="Senha:" minlength="8" required id="password">
-        <input type="text" aria-label="CNPJ" placeholder="CNPJ:" required id="CNPJ">
-        <input type="text" aria-label="Nome da Empresa" placeholder="Nome da Empresa:" required>
-
-        <button type="button" id="cadastrar-bttn">Confirmar</button>
-     </form>
     <footer>
         <img src="img/LogoMuvall.png" alt="Logo MUVall" />
         <a href="faleConosco.html">Fale conosco</a>
